@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/heading"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp"
+        android:textSize="20dp"
+        android:textColor="#386487" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/spotify"
+        android:id="@+id/spotify"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:background="@color/udacityOrange"
+        android:onClick="sendMessage"
+        android:width="200dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/scores"
+        android:id="@+id/scores"
+        android:layout_marginTop="28dp"
+        android:layout_below="@+id/spotify"
+        android:layout_centerHorizontal="true"
+        android:background="@color/udacityOrange"
+        android:onClick="sendMessage"
+        android:width="200dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/library"
+        android:id="@+id/library"
+        android:layout_marginTop="28dp"
+        android:layout_below="@+id/scores"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/udacityOrange"
+        android:onClick="sendMessage"
+        android:width="200dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/build_it_bigger"
+        android:id="@+id/build_it_bigger"
+        android:layout_marginTop="28dp"
+        android:layout_below="@+id/library"
+        android:layout_centerHorizontal="true"
+        android:background="@color/udacityOrange"
+        android:onClick="sendMessage"
+        android:width="200dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bacon_reader"
+        android:id="@+id/bacon_reader"
+        android:background="@color/udacityOrange"
+        android:width="200dp"
+        android:layout_below="@+id/build_it_bigger"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:onClick="sendMessage"
+        android:layout_marginTop="28dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/my_own_app"
+        android:id="@+id/capstone"
+        android:layout_below="@+id/bacon_reader"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:background="#CD0E3E"
+        android:onClick="sendMessage"
+        android:width="200dp" />
+</RelativeLayout>
